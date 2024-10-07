@@ -1,0 +1,10 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+
+df = pd.read_csv("laptop_prices.csv ")
+cantidad = df['TypeName'].value_counts()
+cantidad.plot()
+plt.title("tipo de Laptop")
+plt.xlabel("Marcas")
+plt.ylabel("")
+plt.show()
