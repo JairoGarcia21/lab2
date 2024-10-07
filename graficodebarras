@@ -1,0 +1,10 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+
+df = pd.read_csv("iphone.csv")
+cantidad = df['variant'].value_counts()
+cantidad.plot(kind="bar")
+plt.title("Variantes")
+plt.xlabel("Color y Memoria interna")
+plt.ylabel("Cantidad")
+plt.show()
