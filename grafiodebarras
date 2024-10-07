@@ -1,0 +1,9 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+
+df = pd.read_csv("EA.csv")
+cantidad = df['Payment Date'].value_counts()
+cantidad.plot(kind="pie")
+plt.title("Dia de Pago")
+plt.axis('equal')
+plt.show()
